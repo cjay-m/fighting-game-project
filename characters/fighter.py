@@ -6,8 +6,9 @@ class Fighter(ABC):
     
 
     @abstractmethod 
-    def _init__(self, x, y): 
-        self.rect = pygame.Rect((x, y, 80, 180))
+    def _init__(self, x, y):
+        pass
+      
 
     @abstractmethod
     def move(self, speed):
@@ -15,7 +16,8 @@ class Fighter(ABC):
 
     @abstractmethod
     def draw(self, surface):
-        pygame.draw.rect(surface, (255,0, 0), self.rect)
+        pass
+       
 
         
 
